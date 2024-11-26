@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Main.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Lab3</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Main.java</span></div><h1>Main.java</h1><pre class="source lang-java linenums"><span class="nc" id="L1">public class Main {</span>
+    public static void main(String[] args) {
+        // Tworzenie kolorów
+<span class="fc" id="L4">        Color redColor = new Color(255, 0, 0);</span>
+<span class="fc" id="L5">        Color blueColor = new Color(0, 0, 255, 128);</span>
+<span class="fc" id="L6">        Color greenColor = new Color(0, 255, 0);</span>
+
+        // Tworzenie figur z przypisanymi kolorami
+<span class="fc" id="L9">        Shape rectangle = new Rectangle(5, 10, redColor);</span>
+<span class="fc" id="L10">        Shape triangle = new Triangle(3, 4, 5, blueColor);</span>
+
+<span class="fc" id="L12">        ShapeDescriber describer = new ShapeDescriber();</span>
+
+<span class="fc" id="L14">        System.out.println(&quot;Rectangle:&quot;);</span>
+<span class="fc" id="L15">        describer.describe(rectangle);</span>
+
+<span class="fc" id="L17">        System.out.println(&quot;\nTriangle:&quot;);</span>
+<span class="fc" id="L18">        describer.describe(triangle);</span>
+
+        // Tworzenie figury z innym kolorem
+<span class="fc" id="L21">        Shape greenRectangle = new Rectangle(7, 8, greenColor);</span>
+<span class="fc" id="L22">        System.out.println(&quot;\nGreen Rectangle:&quot;);</span>
+<span class="fc" id="L23">        describer.describe(greenRectangle);</span>
+<span class="fc" id="L24">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>
